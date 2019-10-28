@@ -4,4 +4,7 @@ CONFIG -= app_bundle
 CONFIG -= qt
 
 SOURCES += \
+        FunctionWithArrAndSize.cpp \
+        IteratorStyleFunction.cpp \
+        RotateFunction.cpp \
         main.cpp
