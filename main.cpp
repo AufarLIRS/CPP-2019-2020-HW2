@@ -1,6 +1,4 @@
-#include "FunctionWithArrAndSize.cpp"
-#include "IteratorStyleFunction.cpp"
-#include "RotateFunction.cpp"
+#include "ArrFunctions.h"
 #include <iostream>
 
 using namespace std;

@@ -8,3 +8,6 @@ SOURCES += \
         IteratorStyleFunction.cpp \
         RotateFunction.cpp \
         main.cpp
+
+HEADERS += \
+    ArrFunctions.h
