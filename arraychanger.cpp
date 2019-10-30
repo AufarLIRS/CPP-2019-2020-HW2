@@ -1,22 +1,22 @@
 #include <arraychanger.h>
 int min_element(int* m, int size)
 {
-    int toReturn = *m;
+    int minValue = *m;
     for(int i = 1; i < size; i++)
-        if(m[i] < toReturn)
-            toReturn = m[i];
+        if(m[i] < minValue)
+            minValue = m[i];
 
-    return toReturn;
+    return minValue;
 }
 
 int min_element(int* first, int* last)
 {
-    int toReturn;
+    int minValue = *first;
     for(int i = 1; i < last-first; i++)
-        if(first[i] < toReturn)
-            toReturn = first[i];
+        if(first[i] < minValue)
+            minValue = first[i];
 
-    return toReturn;
+    return minValue;
 }
 
 void rotate(int* first, int* last)

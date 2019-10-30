@@ -5,7 +5,7 @@ CONFIG -= qt
 
 SOURCES += \
         main.cpp \
-    arrauchanger.cpp
+    arraychanger.cpp
 
 HEADERS += \
     arraychanger.h
