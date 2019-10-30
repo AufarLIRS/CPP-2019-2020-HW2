@@ -12,7 +12,7 @@ int min_element(int* m, int size)
 int min_element(int* first, int* last)
 {
     int toReturn;
-    for(int i = 0; i < last-first; i++)
+    for(int i = 1; i < last-first; i++)
         if(first[i] < toReturn)
             toReturn = first[i];
 
@@ -21,10 +21,11 @@ int min_element(int* first, int* last)
 
 void rotate(int* first, int* last)
 {
-    int* new_array = new int[last-first];
-    for(int i = 0; i < last-first; i++)
-        new_array[i]=*(last-i);
-
-    for(int i = 0; i < last-first; i++)
-        first[i]=*(new_array + (last - first - i) );
+    int tmp;
+    for(int i = 0; i < (last - first) / 2; i++){
+        tmp = *(first + i);
+        *(first + i) = *(last - i);
+        *(last - i) = tmp;
+    }
 }
+
