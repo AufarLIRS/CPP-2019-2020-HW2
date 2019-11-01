@@ -6,7 +6,7 @@ using namespace std;
 
 int main()
 {
-    int arr[5] = {1, 2, 3, 4, 5};
+    int arr[5] = {5, 3, 1, 7, 9};
 
     cout << "Task 1:" << endl;
     for (int i = 0; i < 5; i++)
