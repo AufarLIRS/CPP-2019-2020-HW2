@@ -6,7 +6,7 @@ using namespace std;
 
 int main()
 {
-    int arr[5] = {5, 3, 1, 7, 9};
+    int arr[5] = {5, 3, 6, 7, 1};
 
     cout << "Task 1:" << endl;
     for (int i = 0; i < 5; i++)
@@ -23,7 +23,7 @@ int main()
         cout << arr[i] << " ";
     }
     cout << endl;
-    cout << min_element((arr + 0), (arr + 4)) << endl;
+    cout << min_element(arr, arr + 4) << endl;
     cout << "-------------" << endl;
 
 
@@ -34,7 +34,7 @@ int main()
     }
     cout << endl;
 
-    rotate(arr + 0, arr +4);
+    rotate(arr, arr + 4);
 
     for (int i = 0; i < 5; i++)
     {
