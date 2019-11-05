@@ -23,10 +23,19 @@ int min_element (int* first, int* last){
 }
 
 void rotate (int* first, int* last){
-
+       for(int i =0; i < (last-first)/2;i++){
+          int temp = *(last - i);
+          *(last - i) = *(first + i);
+          *(first + i) = temp;
+       }
 }
 
 int main()
 {
-
+    int m[4]={1,2,3,4};
+    cout << min_element(m,4)<< endl;
+    cout << min_element(m+0,m+4)<<endl;
+    //-------------------------------//
+    rotate(m+0,m+4);
+    cout << m[0] << " " << m[3] << endl;
 }
