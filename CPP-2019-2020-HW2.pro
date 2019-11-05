@@ -4,4 +4,10 @@ CONFIG -= app_bundle
 CONFIG -= qt
 
 SOURCES += \
-        main.cpp
+	Task1.cpp \
+        Task2.cpp \
+        Task3.cpp \        
+	main.cpp
+
+HEADERS += \
+    arrtasks.h
